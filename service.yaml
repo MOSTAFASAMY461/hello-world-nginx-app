@@ -1,0 +1,51 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: springboot-demo
+  namespace: mostafasamy461-dev
+  uid: 537cba26-a7e2-4452-ab82-bd15fbd45b5f
+  resourceVersion: '6483591652'
+  creationTimestamp: '2025-11-08T14:20:41Z'
+  labels:
+    app: springboot-demo
+  managedFields:
+    - manager: Mozilla
+      operation: Update
+      apiVersion: v1
+      time: '2025-11-08T14:20:41Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:labels':
+            .: {}
+            'f:app': {}
+        'f:spec':
+          'f:internalTrafficPolicy': {}
+          'f:ports':
+            .: {}
+            'k:{"port":8080,"protocol":"TCP"}':
+              .: {}
+              'f:port': {}
+              'f:protocol': {}
+              'f:targetPort': {}
+          'f:selector': {}
+          'f:sessionAffinity': {}
+          'f:type': {}
+spec:
+  clusterIP: 172.30.39.189
+  ipFamilies:
+    - IPv4
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  internalTrafficPolicy: Cluster
+  clusterIPs:
+    - 172.30.39.189
+  type: ClusterIP
+  ipFamilyPolicy: SingleStack
+  sessionAffinity: None
+  selector:
+    app: springboot-demo
+status:
+  loadBalancer: {}
