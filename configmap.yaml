@@ -1,0 +1,24 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: springboot-config
+  namespace: mostafasamy461-dev
+  uid: 46794968-c0ba-4db9-bbc4-a6a8080096ce
+  resourceVersion: '6562806481'
+  creationTimestamp: '2025-11-10T13:49:05Z'
+  managedFields:
+    - manager: Mozilla
+      operation: Update
+      apiVersion: v1
+      time: '2025-11-10T21:34:00Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:data':
+          .: {}
+          'f:APP_ENV': {}
+          'f:APP_NAME': {}
+          'f:SERVER_PORT': {}
+data:
+  APP_ENV: dev
+  APP_NAME: Spring Boot Demo
+  SERVER_PORT: '8080'
